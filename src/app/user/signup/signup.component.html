@@ -1,0 +1,71 @@
+<nav class= "navbar navbar-expand-md navbar-dark bg-dark">
+
+    <a class="navbar-brand" href="/">My Chat</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target= "#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item">
+
+            <a class="nav-link" (click)="goToSignIn()">Sign-In</a>
+        </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="row p-0 m-0">
+    <div class="col-sm"></div>
+    <div class="col-sm p-5">
+
+        <h2 class="form-signin-heading">sign Up to start chat</h2>
+
+        <br>
+
+        
+        <label for="inputFirstName" class="sr-only">FirstName</label>
+        <input type="text" id="inputFirstName" class="form-control" [(ngModel)]="firstName" placeholder="FirstName" required autofocus>
+
+        <br>
+
+        <label for="inputLastName" class="sr-only">LastName</label>
+        <input type="text" id="inputLastName" class="form-control" [(ngModel)]="lastName" placeholder="LastName" required>
+
+        <br>
+
+     
+        <label for="inputMobile" class="sr-only">Mobile Number</label>
+        <input type="text" id="inputMobile" class="form-control" [(ngModel)]="mobile" placeholder="Mobile Number" required>
+
+        <br>
+      
+        <label for="inputEmail"class="sr-only">Email Address</label>
+        <input type="text" id="inputEmail" class="form-control" [(ngModel)]="email" placeholder="Email Address" required>
+
+        <br>
+
+       
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" [(ngModel)]="password" placeholder="Password" required>
+        
+        <br>
+
+    
+        <label for="inputApiKey" class="sr-only">API KEY</label>
+        <input type="text" id="inputApiKey" class="form-control" [(ngModel)]="apiKey" placeholder="API KEY" required>
+
+        <br>
+
+        <button class="btn btn-lg btn-primary btn-block" type="button" (click)="signUpFunction()">Sign Up</button>
+
+        
+    </div>
+
+    <div class="col-sm"></div>
+
+</div>
